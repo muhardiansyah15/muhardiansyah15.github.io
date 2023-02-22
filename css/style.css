@@ -2023,6 +2023,11 @@ select {
     border-radius: 50%; 
     width: 50%;
   }
+  
+  .article-image {
+    width: 80%;
+    margin-left: 2.5cm;
+  }
 }
 
 
