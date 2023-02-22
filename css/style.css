@@ -786,7 +786,7 @@ nav ul a {
 }
 @media only screen and (max-width: 601px) {
     .container {
-         width: 90%;
+         width: 100%;
     }
 }
 
@@ -2037,4 +2037,17 @@ select {
     text-align: center;
     padding: 20px;
   }
+  
+  .single-experi {
+      width:350px;
+  }
+  
+  .container {
+      padding-left:0px;
+  }
+  
+  .row {
+      padding-left:0px;
+  }
+
 }
