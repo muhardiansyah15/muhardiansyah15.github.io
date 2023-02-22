@@ -2028,6 +2028,13 @@ select {
     width: 80%;
     margin-left: 2.5cm;
   }
+  
+  .iframe-maps {
+      border: 0;
+      margin-left: 0.5cm;
+      width:1905px;
+      height:550px;
+  }
 }
 
 
@@ -2073,6 +2080,13 @@ select {
   
   ul li {
       font-size:13px;
+  }
+  
+  .iframe-maps {
+      margin-top: 2cm;
+      margin-left: 0.7cm;
+      border: 0;
+      width:100%;
   }
 
 }
