@@ -2039,13 +2039,9 @@ select {
   }
   
   .single-experi {
-      width:350px;
+      width:300px;
   }
-  
-/*  .container {
-      padding-left:0px;
-  }*/
-  
+
 
   h2 {
       font-size:22px;
