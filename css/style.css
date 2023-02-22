@@ -2049,5 +2049,24 @@ select {
   .row {
       padding-left:0px;
   }
+  
+  h2 {
+      font-size:22px;
+  }
+  
+  h3 {
+      font-size:18px;
+  }
+  
+  h4 {
+      font-size:15px;
+  }
+  p {
+      font-size:13px;
+  }
+  
+  ul li {
+      font-size:13px;
+  }
 
 }
