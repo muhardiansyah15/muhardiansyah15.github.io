@@ -1923,9 +1923,13 @@ select {
 ======================================================================*/
 .intro-page {
 	height: 100vh;
+        text-align: center;
 }
 .intro-page-vertical-center {
 	top: 40vh;
+        left: 10vh;
+        text-align: center;
+        padding:30px;
 }
 
 .intro-page-vertical-center-2 {
@@ -2081,12 +2085,16 @@ select {
   ul li {
       font-size:13px;
   }
+
   
-  .iframe-maps {
-      margin-top: 2cm;
-      margin-left: 0.7cm;
-      border: 0;
-      width:100%;
+  .intro-picture {
+     width: 40%;
+  }
+  
+  .intro-paragraph {
+     font-size: 15px;
+     padding-left: 50px;
+     padding-right: 50px;
   }
 
 }
