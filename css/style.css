@@ -2029,8 +2029,8 @@ select {
   }
   
   .article-image {
-    width: 80%;
-    margin-left: 2.5cm;
+    width: 50%;
+    margin-top: 10px;
   }
   
   .iframe-maps {
