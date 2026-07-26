@@ -3,7 +3,7 @@
 My personal portfolio: Software Engineer × Mathematics graduate.
 Hand-built single-page site with a dark, futuristic design — no CSS framework, no template.
 
-**Live:** https://muhardiansyah15.github.io/my-personal-website
+**Live:** https://muhardiansyah15.github.io
 
 ## Features
 
