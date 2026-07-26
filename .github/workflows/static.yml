@@ -31,13 +31,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # If a Pages site doesn't yet exist, create/enable it so the workflow can continue
+          enablement: true
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
+          # Upload entire repository (or change to your build output directory, e.g. './public' or './docs')
           path: '.'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
