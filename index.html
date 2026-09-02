@@ -11,6 +11,7 @@
   <meta property="og:title" content="Muhardiansyah — Software Engineer & Pure Math Graduate">
   <meta property="og:description" content="Odoo ERP specialist, full-stack developer, and data science enthusiast building data-driven software solutions.">
   <meta property="og:type" content="website">
+  <meta name="theme-color" content="#ffffff">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" rel="icon">
@@ -19,570 +20,404 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Theme -->
-  <link href="assets/css/theme.css" rel="stylesheet">
+  <link href="assets/css/notion.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="bg-grid"></div>
-  <div class="bg-glow one"></div>
-  <div class="bg-glow two"></div>
-  <canvas id="graph-canvas" aria-hidden="true"></canvas>
+  <div class="layout">
 
-  <header class="site-header">
-    <div class="container">
-      <a href="#home" class="logo"><span class="bracket">&lt;</span>muhardiansyah<span class="dot">.</span>dev<span class="bracket">/&gt;</span></a>
+    <!-- ============ Sidebar ============ -->
+    <aside class="sidebar">
+      <a href="#top" class="logo">muhardiansyah.dev</a>
 
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <span class="side-label">pages</span>
+      <nav aria-label="Navigation">
+        <a href="#about"><span class="em">👋</span>About</a>
+        <a href="#skills"><span class="em">🧰</span>Toolbox</a>
+        <a href="#experience"><span class="em">🧭</span>Experience</a>
+        <a href="#services"><span class="em">🛎️</span>Services</a>
+        <a href="#portfolio"><span class="em">📁</span>Selected Work</a>
+        <a href="#publications"><span class="em">📚</span>Research</a>
+        <a href="#contact"><span class="em">💌</span>Contact</a>
+      </nav>
 
-      <ul class="nav-links">
-        <li><a href="#home" class="active"><span class="nav-idx">01.</span>Home</a></li>
-        <li><a href="#about"><span class="nav-idx">02.</span>About</a></li>
-        <li><a href="#skills"><span class="nav-idx">03.</span>Skills</a></li>
-        <li><a href="#experience"><span class="nav-idx">04.</span>Experience</a></li>
-        <li><a href="#portfolio"><span class="nav-idx">05.</span>Portfolio</a></li>
-        <li><a href="#publications"><span class="nav-idx">06.</span>Research</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+      <div class="side-bottom">
+        <a class="pill dark" href="mailto:muhardiansyah.dev@gmail.com">💌 Email me</a>
+        <div class="side-soc">
+          <a href="https://github.com/muhardiansyah15" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/muhardiansyah15/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.instagram.com/muhardiansyah1597/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+    </aside>
 
-  <main>
+    <!-- ============ Content ============ -->
+    <main class="content" id="top">
 
-    <!-- ============ Hero ============ -->
-    <section id="home" class="hero">
-      <img class="hero-backdrop" src="assets/img/portfolio/gallery-4.png" alt="" aria-hidden="true">
-      <div class="container hero-grid">
-        <div>
-          <h1>Muhardian<wbr>syah<span class="grad-text">.</span><br><span class="grad-text">Engineer × Pure Math Graduate</span></h1>
-          <p class="typed-line"><span class="prompt">λ&gt;</span> <span id="typed" data-items='["Software Engineer","Odoo ERP Specialist","Mathematics Graduate","Data Science Enthusiast","Full-Stack Developer"]'></span><span class="typed-cursor">|</span></p>
-          <p class="hero-desc">
-            I build enterprise software on the Odoo ERP framework — 5+ years of
-            module design, migrations, and implementations — while exploring
-            machine-learning forecasting as a personal passion project, grounded in
-            a formal background in mathematics and graph theory.
+      <!-- Hero -->
+      <section class="band hero">
+        <div class="band-inner">
+          <img class="avatar" src="assets/img/profile-img.jpeg" alt="Portrait of Muhardiansyah">
+          <h1>Muhardiansyah</h1>
+          <p class="roles"><b>Software Engineer · Odoo ERP Specialist</b> — Pure Math Graduate,
+            full-stack developer &amp; data science enthusiast. Tangerang, Indonesia (UTC+7).</p>
+
+          <div class="btn-row">
+            <a class="pill dark" href="mailto:muhardiansyah.dev@gmail.com">💌 Email me</a>
+            <a class="pill" href="doc/Muhardiansyah-resume.pdf" target="_blank">📄 Resume</a>
+            <a class="pill" href="https://github.com/muhardiansyah15" target="_blank" rel="noopener">↳ GitHub</a>
+          </div>
+
+          <div class="callout">
+            <span class="ico">🧭</span>
+            <p><b>Now:</b> designing &amp; shipping Odoo systems at
+              <a href="https://bionerp.com/" target="_blank" rel="noopener">Bion ERP</a>.
+              Off-hours: evolving a Prophet forecasting app and drawing at
+              <a href="https://muhardiansyah15.github.io/Mes-Esquisses/" target="_blank" rel="noopener">Mes Esquisses</a>.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="band" id="about">
+        <div class="band-inner">
+          <h2><span class="emoji">👋</span>From theorems to production systems</h2>
+          <p class="section-sub">who I am, in three paragraphs</p>
+
+          <p>
+            I'm a <strong>Software Engineer</strong> with a <strong>Bachelor of Science in Mathematics</strong>
+            from Universitas Andalas. For over five years in software-house environments I've specialized in
+            <strong>ERP development with the Odoo framework</strong> — leading module design, data migration,
+            multi-database server management, and end-to-end implementations that streamline real business workflows.
           </p>
-          <div class="hero-actions">
-            <a href="#portfolio" class="btn btn-primary"><i class="bi bi-rocket-takeoff"></i> View My Work</a>
-            <a href="doc/Muhardiansyah-resume.pdf" target="_blank" class="btn btn-ghost"><i class="bi bi-file-earmark-arrow-down"></i> Resume</a>
-          </div>
-          <div class="social-row">
-            <a href="https://github.com/muhardiansyah15" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/muhardiansyah15/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="https://www.researchgate.net/profile/Muhardiansyah-Muhardiansyah" target="_blank" rel="noopener" aria-label="ResearchGate"><i class="bi bi-mortarboard"></i></a>
-            <a href="https://twitter.com/muhardiansyah97" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.instagram.com/muhardiansyah1597/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://strava.com/athletes/185882854" target="_blank" rel="noopener" aria-label="Strava"><i class="bi bi-activity"></i></a>
-          </div>
-        </div>
+          <p>
+            My backend core is <strong>Python and PostgreSQL</strong>, complemented by modern web development with
+            JavaScript, React, and FastAPI. Outside of work, <strong>machine-learning forecasting is a personal
+            interest</strong>: my Prophet-based forecasting app is an ongoing side project whose features
+            I keep developing.
+          </p>
+          <p>
+            The mathematician in me never left: I've published research on <strong>rainbow connection numbers in
+            graph theory</strong>, and I bring that same rigor — decompose, prove, optimize — to every engineering
+            problem. Originally from Sungai Limau, West Sumatra; currently building things in Tangerang, Banten.
+          </p>
 
-        <div class="terminal" aria-hidden="true">
-          <div class="terminal-bar">
-            <span class="t-dot r"></span><span class="t-dot y"></span><span class="t-dot g"></span>
-            <span class="t-title">muhardiansyah.py — ~/portfolio</span>
+          <div class="facts">
+            <div class="row"><span class="k">Degree</span><span>B.Sc. Mathematics</span></div>
+            <div class="row"><span class="k">Alma mater</span><span><a href="https://www.unand.ac.id/" target="_blank" rel="noopener">Universitas Andalas</a></span></div>
+            <div class="row"><span class="k">Current role</span><span>Software Engineer @ <a href="https://bionerp.com/" target="_blank" rel="noopener">Bion ERP</a></span></div>
+            <div class="row"><span class="k">Base</span><span>Tangerang, Banten, Indonesia</span></div>
+            <div class="row"><span class="k">Focus</span><span>Odoo ERP · Web</span></div>
+            <div class="row"><span class="k">Research</span><span>Graph Theory · Combinatorics</span></div>
           </div>
-          <div class="terminal-body">
-            <span class="c-cm"># A short proof of who I am</span><br>
-            <span class="c-kw">class</span> <span class="c-fn">Muhardiansyah</span>(<span class="c-fn">Engineer</span>, <span class="c-fn">PureMathGraduate</span>):<br>
-            &nbsp;&nbsp;<span class="c-var">degree</span> = <span class="c-str">"B.Sc. Mathematics"</span><br>
-            &nbsp;&nbsp;<span class="c-var">stack</span> = [<span class="c-str">"Python"</span>, <span class="c-str">"Odoo"</span>, <span class="c-str">"PostgreSQL"</span>,<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">"React"</span>, <span class="c-str">"FastAPI"</span>, <span class="c-str">"Prophet"</span>]<br>
-            &nbsp;&nbsp;<span class="c-var">research</span> = <span class="c-str">"rainbow connection rc(G)"</span><br><br>
-            &nbsp;&nbsp;<span class="c-kw">def</span> <span class="c-fn">solve</span>(<span class="c-var">self</span>, problem):<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-kw">while not</span> problem.solved:<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-var">self</span>.<span class="c-fn">learn</span>() ; <span class="c-var">self</span>.<span class="c-fn">iterate</span>()<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-kw">return</span> elegant_solution<br><br>
-            <span class="c-cm"># ∀ problem ∃ solution — Q.E.D. ∎</span>
+
+          <div class="stat-row">
+            <div class="stat-cell"><b>5+</b><span>years of engineering experience</span></div>
+            <div class="stat-cell"><b>2</b><span>published research papers</span></div>
+            <div class="stat-cell"><b>637+</b><span>research reads on ResearchGate</span></div>
+            <div class="stat-cell"><b>9.9</b><span>Research Interest Score</span></div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="scroll-hint"><span>scroll</span><span class="line"></span></div>
-    </section>
+      <!-- Skills -->
+      <section class="band" id="skills">
+        <div class="band-inner">
+          <h2><span class="emoji">🧰</span>Toolbox</h2>
+          <p class="section-sub">the tools I reach for daily — open a toggle to peek inside</p>
 
-    <!-- ============ Stats ============ -->
-    <section class="stats-strip" aria-label="Highlights">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-card reveal"><div class="num"><span data-count="5">0</span><span class="unit">+</span></div><div class="lbl">Years of engineering experience</div></div>
-          <div class="stat-card reveal" data-delay="1"><div class="num"><span data-count="2">0</span></div><div class="lbl">Published research papers</div></div>
-          <div class="stat-card reveal" data-delay="2"><div class="num"><span data-count="637">0</span><span class="unit">+</span></div><div class="lbl">Research reads on ResearchGate</div></div>
-          <div class="stat-card reveal" data-delay="3"><div class="num"><span data-count="9.9">0</span></div><div class="lbl">Research Interest Score</div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ About ============ -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow">§ 02 · about</div>
-          <h2>From theorems to <span class="grad-text">production systems</span></h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-photo reveal">
-            <img src="assets/img/profile-img.jpeg" alt="Portrait of Muhardiansyah">
-            <img class="scratch-overlay" src="assets/img/portfolio/gallery-4.png" alt="" aria-hidden="true">
-            <span class="badge-eq">rc(G) <span class="op">≤</span> diam(G) + ε</span>
-          </div>
-
-          <div class="about-text reveal" data-delay="1">
-            <p>
-              I'm a <strong>Software Engineer</strong> with a <strong>Bachelor of Science in Mathematics</strong>
-              from Universitas Andalas. For over five years in software-house environments I've specialized in
-              <strong>ERP development with the Odoo framework</strong> — leading module design, data migration,
-              multi-database server management, and end-to-end implementations that streamline real business workflows.
-            </p>
-            <p>
-              My backend core is <strong>Python and PostgreSQL</strong>, complemented by modern web development with
-              JavaScript, React, and FastAPI. Outside of work, <strong>machine-learning forecasting is a personal
-              interest</strong>: my Prophet-based forecasting app is an ongoing side project whose features
-              I keep developing.
-            </p>
-            <p>
-              The mathematician in me never left: I've published research on <strong>rainbow connection numbers in
-              graph theory</strong>, and I bring that same rigor — decompose, prove, optimize — to every engineering
-              problem. Originally from Sungai Limau, West Sumatra; currently building things in Tangerang, Banten.
-            </p>
-
-            <div class="fact-grid">
-              <div class="fact"><span class="k">Degree</span><span class="v">B.Sc. Mathematics</span></div>
-              <div class="fact"><span class="k">Alma mater</span><span class="v"><a href="https://www.unand.ac.id/" target="_blank" rel="noopener">Universitas Andalas</a></span></div>
-              <div class="fact"><span class="k">Current role</span><span class="v">Software Engineer @ <a href="https://bionerp.com/" target="_blank" rel="noopener">Bion ERP</a></span></div>
-              <div class="fact"><span class="k">Base</span><span class="v">Tangerang, Banten, Indonesia</span></div>
-              <div class="fact"><span class="k">Focus</span><span class="v">Odoo ERP · Web</span></div>
-              <div class="fact"><span class="k">Research</span><span class="v">Graph Theory · Combinatorics</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ Skills ============ -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow">§ 03 · skills</div>
-          <h2>Tech <span class="grad-text">arsenal</span></h2>
-          <p class="sub">The tools I reach for daily — from backend cores and ERP internals to statistical modeling.</p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-card reveal">
-            <div class="icon" style="background: linear-gradient(135deg, #22d3ee, #0ea5e9);"><i class="bi bi-braces"></i></div>
-            <h3>Backend Engineering</h3>
-            <span class="lvl">// primary weapon</span>
-            <div class="chip-row">
-              <span class="chip">Python</span><span class="chip">PostgreSQL</span><span class="chip">FastAPI</span>
-              <span class="chip">Django</span><span class="chip">REST API</span>
-            </div>
-          </div>
-
-          <div class="skill-card reveal" data-delay="1">
-            <div class="icon" style="background: linear-gradient(135deg, #8b5cf6, #6366f1);"><i class="bi bi-kanban"></i></div>
-            <h3>ERP &amp; Odoo</h3>
-            <span class="lvl">// 5+ years deep</span>
-            <div class="chip-row">
-              <span class="chip">Odoo Framework</span><span class="chip">Sales</span><span class="chip">Inventory</span>
-              <span class="chip">Accounting</span><span class="chip">HR</span><span class="chip">Manufacturing</span>
-            </div>
-          </div>
-
-          <div class="skill-card reveal" data-delay="2">
-            <div class="icon" style="background: linear-gradient(135deg, #e879f9, #c026d3);"><i class="bi bi-graph-up-arrow"></i></div>
-            <h3>Data Science &amp; ML</h3>
-            <span class="lvl">// personal interest</span>
-            <div class="chip-row">
-              <span class="chip">Prophet</span><span class="chip">scikit-learn</span><span class="chip">Pandas</span>
-              <span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">R</span><span class="chip">MATLAB</span>
-            </div>
-          </div>
-
-          <div class="skill-card reveal">
-            <div class="icon" style="background: linear-gradient(135deg, #a3e635, #65a30d);"><i class="bi bi-window-stack"></i></div>
-            <h3>Frontend Development</h3>
-            <span class="lvl">// user-facing craft</span>
-            <div class="chip-row">
-              <span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">TypeScript</span>
-              <span class="chip">Node.js</span><span class="chip">HTML/CSS</span><span class="chip">Bootstrap</span>
-            </div>
-          </div>
-
-          <div class="skill-card reveal" data-delay="1">
-            <div class="icon" style="background: linear-gradient(135deg, #fbbf24, #f97316);"><i class="bi bi-hdd-network"></i></div>
-            <h3>DevOps &amp; Infrastructure</h3>
-            <span class="lvl">// ship &amp; scale</span>
-            <div class="chip-row">
-              <span class="chip">Linux</span><span class="chip">NGINX</span><span class="chip">Git / GitHub</span>
-              <span class="chip">VPS Hosting</span><span class="chip">GitHub Actions</span>
-            </div>
-          </div>
-
-          <div class="skill-card reveal" data-delay="2">
-            <div class="icon" style="background: linear-gradient(135deg, #fb7185, #e11d48);"><i class="bi bi-diagram-3"></i></div>
-            <h3>Mathematics</h3>
-            <span class="lvl">// the foundation</span>
-            <div class="chip-row">
-              <span class="chip">Graph Theory</span><span class="chip">Combinatorics</span><span class="chip">Numerical Methods</span>
-              <span class="chip">Computational Statistics</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ Experience ============ -->
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow">§ 04 · experience</div>
-          <h2>The <span class="grad-text">trajectory</span></h2>
-        </div>
-
-        <div class="timeline">
-          <div class="tl-item reveal">
-            <span class="period">2024 — present</span>
-            <h3>Mid-Level Software Engineer</h3>
-            <p class="org">PT Bion Digital Indonesia (<a href="https://bionerp.com/" target="_blank" rel="noopener">Bion ERP</a>) · Tangerang, Banten</p>
-            <ul>
-              <li>Lead design, development, and testing of Odoo modules</li>
-              <li>Delegate tasks and mentor a 2-member development team</li>
-              <li>Manage cloud platforms and server infrastructure for scalable, reliable deployments</li>
-              <li>Operate multi-database Odoo environments and deliver L1–L3 technical support</li>
-            </ul>
-          </div>
-
-          <div class="tl-item reveal">
-            <span class="period">2023 — 2024</span>
-            <h3>Odoo Developer</h3>
-            <p class="org">PT Bion Digital Indonesia (<a href="https://bionerp.com/" target="_blank" rel="noopener">Bion ERP</a>) · Tangerang, Banten</p>
-            <ul>
-              <li>Designed, developed, and tested Odoo modules and new functionalities</li>
-              <li>Performed data migration, configuration, and multi-database server management</li>
-              <li>Delivered client-tailored solutions with comprehensive documentation</li>
-            </ul>
-          </div>
-
-          <div class="tl-item reveal">
-            <span class="period">2021 — 2023</span>
-            <h3>Software Engineer</h3>
-            <p class="org">PT Tigernix Solutions Indonesia (<a href="https://tigernix.com/" target="_blank" rel="noopener">Tigernix</a>) · Batam, Kepulauan Riau</p>
-            <ul>
-              <li>Built and tested Odoo modules; handled data migration and configuration</li>
-              <li>Managed cloud infrastructure and multi-database Odoo deployments</li>
-              <li>Provided multi-level (L1–L3) technical support for enterprise clients</li>
-            </ul>
-          </div>
-
-          <div class="tl-item reveal">
-            <span class="period">2019 — 2021</span>
-            <h3>Software Engineer</h3>
-            <p class="org">PT Intek Karya · Batam, Kepulauan Riau</p>
-            <ul>
-              <li>Started the ERP journey: Odoo module development, server setup, and client support</li>
-            </ul>
-          </div>
-
-          <div class="tl-item reveal">
-            <span class="period">2015 — 2019</span>
-            <h3>B.Sc. Mathematics</h3>
-            <p class="org">Universitas Andalas · Padang, West Sumatra</p>
-            <ul>
-              <li>Computer lab assistant; strong grades in computational statistics, programming, and numerical methods</li>
-              <li>Proficient in MATLAB and R statistical software</li>
-            </ul>
-            <div class="thesis">
-              <span class="mono">thesis :=</span> Rainbow Connection of the Amalgamation of Homogeneous Generalized Triangle-Ladder Graphs
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ Services ============ -->
-    <section id="services" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow">§ 05 · services</div>
-          <h2>What I can <span class="grad-text">build for you</span></h2>
-        </div>
-
-        <div class="services-grid">
-          <div class="service-card reveal" data-idx="01">
-            <span class="icon">⚙️</span>
-            <h3>Odoo Implementation &amp; Customization</h3>
-            <p>End-to-end ERP implementation and bespoke module development tailored to your business workflows.</p>
-          </div>
-          <div class="service-card reveal" data-delay="1" data-idx="02">
-            <span class="icon">🔗</span>
-            <h3>Odoo Integration</h3>
-            <p>Connect Odoo with third-party services, APIs, and legacy systems for a seamless data flow.</p>
-          </div>
-          <div class="service-card reveal" data-delay="2" data-idx="03">
-            <span class="icon">🚀</span>
-            <h3>Odoo Version Upgrades</h3>
-            <p>Safe migrations to newer Odoo versions — data, customizations, and downtime kept under control.</p>
-          </div>
-          <div class="service-card reveal" data-idx="04">
-            <span class="icon">🛠️</span>
-            <h3>Bug Fixing &amp; Technical Support</h3>
-            <p>Multi-level (L1–L3) support and rapid debugging to keep your systems running smoothly.</p>
-          </div>
-          <div class="service-card reveal" data-delay="1" data-idx="05">
-            <span class="icon">⚡</span>
-            <h3>Performance Optimization</h3>
-            <p>Profiling and tuning of Odoo instances, databases, and servers for faster, leaner operations.</p>
-          </div>
-          <div class="service-card reveal" data-delay="2" data-idx="06">
-            <span class="icon">📈</span>
-            <h3>Sales Forecast Analysis</h3>
-            <p>Time-series forecasting with Prophet and statistical models that turn history into future insight.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ Portfolio ============ -->
-    <section id="portfolio" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow">§ 06 · portfolio</div>
-          <h2>Selected <span class="grad-text">work</span></h2>
-          <p class="sub">Apps, experiments, and creative work — where engineering meets curiosity.</p>
-        </div>
-
-        <div class="filter-row reveal">
-          <button class="filter-btn active" data-filter="*">all()</button>
-          <button class="filter-btn" data-filter="app">.apps</button>
-          <button class="filter-btn" data-filter="art">.art</button>
-        </div>
-
-        <div class="projects-grid">
-          <article class="project-card featured reveal" data-cat="app">
-            <div class="project-thumb">
-              <img src="assets/img/portfolio/prophet-thumb.svg" alt="Prophet Forecasting App — forecast chart illustration" loading="lazy">
-              <span class="cat-tag">featured · ML</span>
-            </div>
-            <div class="project-body">
-              <h3>Prophet Forecasting App</h3>
-              <p>Full-stack time-series forecasting platform: upload Excel data, tune seasonality and trend parameters, and get interactive predictions with MAE/RMSE/MAPE accuracy metrics. A personal-interest project I keep evolving.</p>
-              <div class="project-tech">
-                <span class="chip">React + TS</span><span class="chip">FastAPI</span><span class="chip">Prophet</span><span class="chip">Chart.js</span>
+          <div class="toggle-stack">
+            <details class="toggle-block" open>
+              <summary>Backend Engineering <span class="note">primary weapon</span></summary>
+              <div class="chips">
+                <span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">FastAPI</span>
+                <span class="tag">Django</span><span class="tag">REST API</span>
               </div>
-              <div class="project-links">
-                <a href="prophet-forecasting-details.html"><i class="bi bi-arrow-right-circle"></i> Case study</a>
-                <a href="https://muhardiansyah15.github.io/prophet-forecasting-app" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live demo</a>
-                <a href="https://github.com/muhardiansyah15/prophet-forecasting-app" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+            </details>
+
+            <details class="toggle-block" open>
+              <summary>ERP &amp; Odoo <span class="note">5+ years deep</span></summary>
+              <div class="chips">
+                <span class="tag pink">Odoo Framework</span><span class="tag">Sales</span><span class="tag">Inventory</span>
+                <span class="tag">Accounting</span><span class="tag">HR</span><span class="tag">Manufacturing</span>
+              </div>
+            </details>
+
+            <details class="toggle-block">
+              <summary>Data Science &amp; ML <span class="note">personal interest</span></summary>
+              <div class="chips">
+                <span class="tag">Prophet</span><span class="tag">scikit-learn</span><span class="tag">Pandas</span>
+                <span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">R</span><span class="tag">MATLAB</span>
+              </div>
+            </details>
+
+            <details class="toggle-block">
+              <summary>Frontend Development <span class="note">user-facing craft</span></summary>
+              <div class="chips">
+                <span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">TypeScript</span>
+                <span class="tag">Node.js</span><span class="tag">HTML/CSS</span><span class="tag">Bootstrap</span>
+              </div>
+            </details>
+
+            <details class="toggle-block">
+              <summary>DevOps &amp; Infrastructure <span class="note">ship &amp; scale</span></summary>
+              <div class="chips">
+                <span class="tag">Linux</span><span class="tag">NGINX</span><span class="tag">Git / GitHub</span>
+                <span class="tag">VPS Hosting</span><span class="tag">GitHub Actions</span>
+              </div>
+            </details>
+
+            <details class="toggle-block">
+              <summary>Mathematics <span class="note">the foundation</span></summary>
+              <div class="chips">
+                <span class="tag">Graph Theory</span><span class="tag">Combinatorics</span><span class="tag">Numerical Methods</span>
+                <span class="tag">Computational Statistics</span>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="band" id="experience">
+        <div class="band-inner">
+          <h2><span class="emoji">🧭</span>Experience</h2>
+          <p class="section-sub">the trajectory so far</p>
+
+          <div class="xp-stack">
+            <div class="xp">
+              <span class="period">2024 — present</span>
+              <h3>Mid-Level Software Engineer</h3>
+              <p class="org">PT Bion Digital Indonesia (<a href="https://bionerp.com/" target="_blank" rel="noopener">Bion ERP</a>) · Tangerang, Banten</p>
+              <ul>
+                <li>Lead design, development, and testing of Odoo modules</li>
+                <li>Delegate tasks and mentor a 2-member development team</li>
+                <li>Manage cloud platforms and server infrastructure for scalable, reliable deployments</li>
+                <li>Operate multi-database Odoo environments and deliver L1–L3 technical support</li>
+              </ul>
+            </div>
+
+            <div class="xp">
+              <span class="period">2023 — 2024</span>
+              <h3>Odoo Developer</h3>
+              <p class="org">PT Bion Digital Indonesia (<a href="https://bionerp.com/" target="_blank" rel="noopener">Bion ERP</a>) · Tangerang, Banten</p>
+              <ul>
+                <li>Designed, developed, and tested Odoo modules and new functionalities</li>
+                <li>Performed data migration, configuration, and multi-database server management</li>
+                <li>Delivered client-tailored solutions with comprehensive documentation</li>
+              </ul>
+            </div>
+
+            <div class="xp">
+              <span class="period">2021 — 2023</span>
+              <h3>Software Engineer</h3>
+              <p class="org">PT Tigernix Solutions Indonesia (<a href="https://tigernix.com/" target="_blank" rel="noopener">Tigernix</a>) · Batam, Kepulauan Riau</p>
+              <ul>
+                <li>Built and tested Odoo modules; handled data migration and configuration</li>
+                <li>Managed cloud infrastructure and multi-database Odoo deployments</li>
+                <li>Provided multi-level (L1–L3) technical support for enterprise clients</li>
+              </ul>
+            </div>
+
+            <div class="xp">
+              <span class="period">2019 — 2021</span>
+              <h3>Software Engineer</h3>
+              <p class="org">PT Intek Karya · Batam, Kepulauan Riau</p>
+              <ul>
+                <li>Started the ERP journey: Odoo module development, server setup, and client support</li>
+              </ul>
+            </div>
+
+            <div class="xp">
+              <span class="period">2015 — 2019</span>
+              <h3>B.Sc. Mathematics</h3>
+              <p class="org">Universitas Andalas · Padang, West Sumatra</p>
+              <ul>
+                <li>Computer lab assistant; strong grades in computational statistics, programming, and numerical methods</li>
+                <li>Proficient in MATLAB and R statistical software</li>
+              </ul>
+              <div class="callout gray thesis">
+                <span class="ico">🎓</span>
+                <p><b>Thesis:</b> Rainbow Connection of the Amalgamation of Homogeneous Generalized Triangle-Ladder Graphs</p>
               </div>
             </div>
-          </article>
-
-          <article class="project-card reveal" data-cat="app" data-delay="1">
-            <div class="project-thumb">
-              <img src="assets/img/portfolio/resonance-thumb.svg" alt="My Spotify Stats dashboard" loading="lazy">
-              <span class="cat-tag">web app</span>
-            </div>
-            <div class="project-body">
-              <h3>My Spotify Stats</h3>
-              <p>Personalized listening analytics — top genres, songs, and artists rendered from your Spotify history.</p>
-              <div class="project-tech">
-                <span class="chip">JavaScript</span><span class="chip">Spotify API</span><span class="chip">Chart.js</span>
-              </div>
-              <div class="project-links">
-                <a href="https://muhardiansyah15.github.io/my-spotify-stats/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live</a>
-                <a href="https://github.com/muhardiansyah15/my-spotify-stats" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-cat="app">
-            <div class="project-thumb">
-              <img src="assets/img/portfolio/mindreader-thumb.svg" alt="The Guessing Name Game" loading="lazy">
-              <span class="cat-tag">game</span>
-            </div>
-            <div class="project-body">
-              <h3>The Guessing Name Game</h3>
-              <p>An interactive guessing game: you give the clue, the system deduces the name. Built for fun with React.</p>
-              <div class="project-tech">
-                <span class="chip">React</span><span class="chip">Vite</span>
-              </div>
-              <div class="project-links">
-                <a href="https://muhardiansyah15.github.io/guessing-game-reactjs/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Play</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-cat="app" data-delay="1">
-            <div class="project-thumb">
-              <img src="assets/img/portfolio/my-website.jpg" alt="Personal website screenshot" loading="lazy">
-              <span class="cat-tag">web</span>
-            </div>
-            <div class="project-body">
-              <h3>This Website</h3>
-              <p>Hand-built portfolio — no frameworks, no template. Custom canvas graph animation as a nod to graph theory.</p>
-              <div class="project-tech">
-                <span class="chip">HTML/CSS</span><span class="chip">Vanilla JS</span><span class="chip">Canvas</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/muhardiansyah15/my-personal-website" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-cat="art">
-            <div class="project-thumb">
-              <img src="assets/img/portfolio/mes-esquisses-thumb.svg" alt="Mes Esquisses — graphic art gallery website" loading="lazy">
-              <span class="cat-tag">art · web</span>
-            </div>
-            <div class="project-body">
-              <h3>Mes Esquisses</h3>
-              <p>A poster-style gallery site for my graphic art — one face and one name redrawn in many styles: WPAP, scratch art, floral mosaic, Kufi calligraphy, stained glass.</p>
-              <div class="project-tech">
-                <span class="chip">HTML/CSS</span><span class="chip">Vanilla JS</span><span class="chip">Motion design</span>
-              </div>
-              <div class="project-links">
-                <a href="https://muhardiansyah15.github.io/Mes-Esquisses/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Visit gallery</a>
-                <a href="https://github.com/muhardiansyah15/Mes-Esquisses" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ============ Publications ============ -->
-    <section id="publications" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow">§ 07 · research</div>
-          <h2>Published <span class="grad-text">mathematics</span></h2>
-          <p class="sub">Peer-reviewed work on rainbow connection numbers — coloring the edges of graphs so every pair of vertices is joined by a rainbow path.</p>
+      <!-- Services -->
+      <section class="band" id="services">
+        <div class="band-inner">
+          <h2><span class="emoji">🛎️</span>What I can build for you</h2>
+          <p class="section-sub">available for freelance &amp; consulting</p>
+
+          <div class="svc-grid">
+            <div class="svc"><span class="ico">⚙️</span><h3>Odoo Implementation &amp; Customization</h3><p>End-to-end ERP implementation and bespoke module development tailored to your business workflows.</p></div>
+            <div class="svc"><span class="ico">🔗</span><h3>Odoo Integration</h3><p>Connect Odoo with third-party services, APIs, and legacy systems for a seamless data flow.</p></div>
+            <div class="svc"><span class="ico">🚀</span><h3>Odoo Version Upgrades</h3><p>Safe migrations to newer Odoo versions — data, customizations, and downtime kept under control.</p></div>
+            <div class="svc"><span class="ico">🛠️</span><h3>Bug Fixing &amp; Technical Support</h3><p>Multi-level (L1–L3) support and rapid debugging to keep your systems running smoothly.</p></div>
+            <div class="svc"><span class="ico">⚡</span><h3>Performance Optimization</h3><p>Profiling and tuning of Odoo instances, databases, and servers for faster, leaner operations.</p></div>
+            <div class="svc"><span class="ico">📈</span><h3>Sales Forecast Analysis</h3><p>Time-series forecasting with Prophet and statistical models that turn history into future insight.</p></div>
+          </div>
         </div>
+      </section>
 
-        <div class="pub-intro-stats">
-          <div class="stat-card reveal"><div class="num"><span data-count="9.9">0</span></div><div class="lbl">Research Interest Score</div></div>
-          <div class="stat-card reveal" data-delay="1"><div class="num"><span data-count="637">0</span><span class="unit">+</span></div><div class="lbl">Reads</div></div>
-          <div class="stat-card reveal" data-delay="2"><div class="num"><span data-count="5">0</span></div><div class="lbl">Citations</div></div>
-          <div class="stat-card reveal" data-delay="3"><div class="num"><span data-count="2">0</span></div><div class="lbl">Publications</div></div>
+      <!-- Portfolio -->
+      <section class="band" id="portfolio">
+        <div class="band-inner">
+          <h2><span class="emoji">📁</span>Selected work</h2>
+          <p class="section-sub">apps, experiments, and creative work — where engineering meets curiosity</p>
+
+          <div class="seg" role="tablist" aria-label="Filter projects">
+            <button class="active" data-filter="*" role="tab" aria-selected="true">All</button>
+            <button data-filter="app" role="tab" aria-selected="false">Apps</button>
+            <button data-filter="art" role="tab" aria-selected="false">Art</button>
+          </div>
+
+          <div class="gallery">
+            <article class="g-card featured" data-cat="app">
+              <div class="g-thumb"><img src="assets/img/portfolio/prophet-thumb.svg" alt="Prophet Forecasting App — forecast chart illustration" loading="lazy"></div>
+              <div class="g-body">
+                <span class="cat">featured · ML</span>
+                <h3>Prophet Forecasting App</h3>
+                <p>Full-stack time-series forecasting platform: upload Excel data, tune seasonality and trend parameters, and get interactive predictions with MAE/RMSE/MAPE accuracy metrics. A personal-interest project I keep evolving.</p>
+                <div class="g-tags"><span class="tag">React + TS</span><span class="tag">FastAPI</span><span class="tag">Prophet</span><span class="tag">Chart.js</span></div>
+                <div class="g-links">
+                  <a href="prophet-forecasting-details.html">Case study</a>
+                  <a href="https://muhardiansyah15.github.io/prophet-forecasting-app" target="_blank" rel="noopener">Live demo ↗</a>
+                  <a href="https://github.com/muhardiansyah15/prophet-forecasting-app" target="_blank" rel="noopener">Code ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="g-card" data-cat="app">
+              <div class="g-thumb"><img src="assets/img/portfolio/resonance-thumb.svg" alt="My Spotify Stats dashboard" loading="lazy"></div>
+              <div class="g-body">
+                <span class="cat">web app</span>
+                <h3>My Spotify Stats</h3>
+                <p>Personalized listening analytics — top genres, songs, and artists rendered from your Spotify history.</p>
+                <div class="g-tags"><span class="tag">JavaScript</span><span class="tag">Spotify API</span><span class="tag">Chart.js</span></div>
+                <div class="g-links">
+                  <a href="https://muhardiansyah15.github.io/my-spotify-stats/" target="_blank" rel="noopener">Live ↗</a>
+                  <a href="https://github.com/muhardiansyah15/my-spotify-stats" target="_blank" rel="noopener">Code ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="g-card" data-cat="app">
+              <div class="g-thumb"><img src="assets/img/portfolio/mindreader-thumb.svg" alt="The Guessing Name Game" loading="lazy"></div>
+              <div class="g-body">
+                <span class="cat">game</span>
+                <h3>The Guessing Name Game</h3>
+                <p>An interactive guessing game: you give the clue, the system deduces the name. Built for fun with React.</p>
+                <div class="g-tags"><span class="tag">React</span><span class="tag">Vite</span></div>
+                <div class="g-links">
+                  <a href="https://muhardiansyah15.github.io/guessing-game-reactjs/" target="_blank" rel="noopener">Play ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="g-card" data-cat="art">
+              <div class="g-thumb"><img src="assets/img/portfolio/mes-esquisses-thumb.svg" alt="Mes Esquisses — graphic art gallery website" loading="lazy"></div>
+              <div class="g-body">
+                <span class="cat">art · web</span>
+                <h3>Mes Esquisses</h3>
+                <p>A poster-style gallery site for my graphic art — one face and one name redrawn in many styles: WPAP, scratch art, floral mosaic, Kufi calligraphy, stained glass.</p>
+                <div class="g-tags"><span class="tag">HTML/CSS</span><span class="tag">Vanilla JS</span><span class="tag">Motion design</span></div>
+                <div class="g-links">
+                  <a href="https://muhardiansyah15.github.io/Mes-Esquisses/" target="_blank" rel="noopener">Visit gallery ↗</a>
+                  <a href="https://github.com/muhardiansyah15/Mes-Esquisses" target="_blank" rel="noopener">Code ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="g-card" data-cat="app">
+              <div class="g-thumb"><img src="assets/img/portfolio/my-website.jpg" alt="Personal website screenshot" loading="lazy"></div>
+              <div class="g-body">
+                <span class="cat">web</span>
+                <h3>This Website</h3>
+                <p>Hand-built portfolio — no frameworks, no template. Now redesigned in a calm, Notion-style register.</p>
+                <div class="g-tags"><span class="tag">HTML/CSS</span><span class="tag">Vanilla JS</span></div>
+                <div class="g-links">
+                  <a href="https://github.com/muhardiansyah15/my-personal-website" target="_blank" rel="noopener">Code ↗</a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <article class="pub-card reveal">
-          <div class="pub-eq">rc(G)</div>
-          <div>
+      <!-- Publications -->
+      <section class="band" id="publications">
+        <div class="band-inner">
+          <h2><span class="emoji">📚</span>Published mathematics</h2>
+          <p class="section-sub">peer-reviewed work on rainbow connection numbers — coloring the edges of graphs so every pair of vertices is joined by a rainbow path</p>
+
+          <article class="pub">
             <h3><a href="https://ejgta.org/index.php/ejgta/article/view/1488" target="_blank" rel="noopener">On the rainbow connection numbers of line, middle, and total graphs of wheels</a></h3>
             <p class="authors">Lyra Yulianti, <b>Muhardiansyah</b>, Admi Nazra</p>
             <p class="venue">Electronic Journal of Graph Theory and Applications 13 (1) (2025), 19–29</p>
-            <div class="pub-links">
-              <a href="https://ejgta.org/index.php/ejgta/article/view/1488" target="_blank" rel="noopener"><i class="bi bi-journal-text"></i> Read paper</a>
-            </div>
-          </div>
-        </article>
+            <div class="links"><a href="https://ejgta.org/index.php/ejgta/article/view/1488" target="_blank" rel="noopener">Read paper ↗</a></div>
+          </article>
 
-        <article class="pub-card reveal" data-delay="1">
-          <div class="pub-eq">K₃-net</div>
-          <div>
+          <article class="pub">
             <h3><a href="https://iopscience.iop.org/article/10.1088/1742-6596/1836/1/012004/meta" target="_blank" rel="noopener">On the rainbow connection number of triangle-net graph</a></h3>
             <p class="authors">Lyra Yulianti, Admi Nazra, <b>Muhardiansyah</b>, Narwen</p>
             <p class="venue">J. Phys.: Conf. Ser. 1836 012004 · ICCGANT 2020 · IOP Publishing</p>
-            <div class="pub-links">
-              <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1836/1/012004/meta" target="_blank" rel="noopener"><i class="bi bi-journal-text"></i> Read paper</a>
-              <a href="doc/muhardiansyah-paper.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i> PDF</a>
+            <div class="links">
+              <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1836/1/012004/meta" target="_blank" rel="noopener">Read paper ↗</a>
+              <a href="doc/muhardiansyah-paper.pdf" target="_blank">PDF ↗</a>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <p class="reveal" style="margin-top: 24px;">
-          <a href="https://www.researchgate.net/profile/Muhardiansyah-Muhardiansyah" target="_blank" rel="noopener" class="mono" style="font-size: 14px;">
-            → full profile on ResearchGate
-          </a>
-        </p>
-      </div>
-    </section>
-
-    <!-- ============ Contact ============ -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div class="eyebrow">§ 08 · contact</div>
-          <h2>Let's <span class="grad-text">connect</span></h2>
-          <p class="sub">Open to opportunities, collaborations, and interesting problems. Preferred channel: email.</p>
+          <p class="small"><a href="https://www.researchgate.net/profile/Muhardiansyah-Muhardiansyah" target="_blank" rel="noopener">→ full profile on ResearchGate</a></p>
         </div>
+      </section>
 
-        <div class="contact-grid">
-          <div class="contact-card reveal">
-            <div class="icon"><i class="bi bi-envelope"></i></div>
-            <div>
-              <h3>Email</h3>
-              <a class="val" href="mailto:muhardiansyah.dev@gmail.com">muhardiansyah.dev@gmail.com</a>
-              <span class="meta">response_time ≈ 24h</span>
-            </div>
+      <!-- Contact -->
+      <section class="band" id="contact">
+        <div class="band-inner">
+          <h2><span class="emoji">💌</span>Let's connect</h2>
+          <p class="section-sub">open to opportunities, collaborations, and interesting problems — preferred channel: email</p>
+
+          <div class="contact-list">
+            <div class="row"><span class="k">Email</span><span><a href="mailto:muhardiansyah.dev@gmail.com">muhardiansyah.dev@gmail.com</a><span class="meta">response ≈ 24h</span></span></div>
+            <div class="row"><span class="k">LinkedIn</span><span><a href="https://www.linkedin.com/in/muhardiansyah15/" target="_blank" rel="noopener">in/muhardiansyah15</a><span class="meta">response ≈ 48h</span></span></div>
+            <div class="row"><span class="k">GitHub</span><span><a href="https://github.com/muhardiansyah15" target="_blank" rel="noopener">@muhardiansyah15</a><span class="meta">code &amp; experiments</span></span></div>
+            <div class="row"><span class="k">Location</span><span>Tangerang, Banten, Indonesia<span class="meta">WIB (UTC+7)</span></span></div>
           </div>
-          <div class="contact-card reveal" data-delay="1">
-            <div class="icon"><i class="bi bi-linkedin"></i></div>
-            <div>
-              <h3>LinkedIn</h3>
-              <a class="val" href="https://www.linkedin.com/in/muhardiansyah15/" target="_blank" rel="noopener">in/muhardiansyah15</a>
-              <span class="meta">response_time ≈ 48h</span>
-            </div>
-          </div>
-          <div class="contact-card reveal">
-            <div class="icon"><i class="bi bi-github"></i></div>
-            <div>
-              <h3>GitHub</h3>
-              <a class="val" href="https://github.com/muhardiansyah15" target="_blank" rel="noopener">@muhardiansyah15</a>
-              <span class="meta">code &amp; experiments</span>
-            </div>
-          </div>
-          <div class="contact-card reveal" data-delay="1">
-            <div class="icon"><i class="bi bi-geo-alt"></i></div>
-            <div>
-              <h3>Location</h3>
-              <p>Tangerang, Banten, Indonesia</p>
-              <span class="meta">timezone = WIB (UTC+7)</span>
-            </div>
+
+          <div class="banner">
+            <h3>Have a problem worth solving?</h3>
+            <p>Whether it's an ERP that needs taming, data that needs forecasting, or an idea that needs shipping — let's talk.</p>
+            <a href="mailto:muhardiansyah.dev@gmail.com" class="pill">💌 Start a conversation</a>
           </div>
         </div>
+      </section>
 
-        <div class="contact-banner reveal">
-          <h3>Have a problem worth <span class="grad-text">solving</span>?</h3>
-          <p>Whether it's an ERP that needs taming, data that needs forecasting, or an idea that needs shipping — let's talk.</p>
-          <a href="mailto:muhardiansyah.dev@gmail.com" class="btn btn-primary"><i class="bi bi-send"></i> Start a conversation</a>
+      <!-- Footer -->
+      <footer class="footer">
+        <div>muhardiansyah.dev</div>
+        <div class="soc">
+          <a href="https://github.com/muhardiansyah15" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/muhardiansyah15/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://twitter.com/muhardiansyah97" target="_blank" rel="noopener">X</a>
+          <a href="https://www.instagram.com/muhardiansyah1597/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/muhardiansyah97" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://strava.com/athletes/185882854" target="_blank" rel="noopener">Strava</a>
         </div>
-      </div>
-    </section>
+        <p class="eq">∀ problem ∃ solution : solve(problem) → elegant</p>
+        <p>© 2023–<span id="year"></span> Muhardiansyah. All rights reserved. · designed &amp; built from scratch — no template</p>
+      </footer>
 
-  </main>
+    </main>
+  </div>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <a href="#home" class="logo"><span class="bracket">&lt;</span>muhardiansyah<span class="dot">.</span>dev<span class="bracket">/&gt;</span></a>
-      <p class="tagline">Software Engineer · Odoo ERP Specialist · Data Science Enthusiast</p>
-      <div class="social-row">
-        <a href="https://github.com/muhardiansyah15" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/muhardiansyah15/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-        <a href="https://twitter.com/muhardiansyah97" target="_blank" rel="noopener" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.instagram.com/muhardiansyah1597/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.facebook.com/muhardiansyah97" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://strava.com/athletes/185882854" target="_blank" rel="noopener" aria-label="Strava"><i class="bi bi-activity"></i></a>
-      </div>
-      <p class="footer-eq">∀ problem ∃ solution : <span class="hl">solve(problem) → elegant</span></p>
-      <p class="copyright">
-        © 2023–<span id="year"></span> Muhardiansyah. All rights reserved.
-        <span class="built">designed &amp; built from scratch — no template</span>
-      </p>
-    </div>
-  </footer>
-
-  <a href="#home" id="scroll-top" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
-
-  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/notion.js"></script>
 </body>
 
 </html>
