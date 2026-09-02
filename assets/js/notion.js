@@ -2,6 +2,12 @@
 (function () {
   "use strict";
 
+  /* Preloader */
+  window.addEventListener("load", function () {
+    var pre = document.getElementById("preloader");
+    if (pre) setTimeout(function () { pre.classList.add("fini"); }, 350);
+  });
+
   /* Footer year */
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();

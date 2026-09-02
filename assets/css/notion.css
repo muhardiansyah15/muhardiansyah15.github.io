@@ -19,6 +19,15 @@
 }
 
 * { box-sizing: border-box; }
+
+/* Preloader — dark stage for the white monogram spinner */
+#preloader {
+  position: fixed; inset: 0; z-index: 999;
+  display: grid; place-items: center;
+  background: var(--ink);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+#preloader.fini { opacity: 0; visibility: hidden; }
 html { scroll-behavior: smooth; }
 
 body {
