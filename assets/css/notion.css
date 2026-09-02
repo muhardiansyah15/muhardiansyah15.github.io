@@ -195,6 +195,21 @@ h2 .doodle { width: 1.55rem; height: 1.55rem; }
 .callout .ico { flex: none; font-size: 1.1rem; line-height: 1.5; }
 .callout p { margin: 0; }
 
+/* About: text left, WPAP portrait right */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 264px;
+  gap: 28px;
+  align-items: start;
+}
+.about-art {
+  margin: 0;
+  border: var(--grid);
+  position: sticky;
+  top: 22px;
+}
+.about-art img { width: 100%; display: block; }
+
 /* --------------------------------------------------------------------------
    Facts & stats
    -------------------------------------------------------------------------- */
@@ -417,4 +432,6 @@ h2 .doodle { width: 1.55rem; height: 1.55rem; }
   .svc { border-right: none !important; border-bottom: var(--grid) !important; }
   .svc:last-child { border-bottom: none !important; }
   .facts .row, .contact-list .row { grid-template-columns: 1fr; gap: 2px; }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-art { position: static; max-width: 340px; }
 }
