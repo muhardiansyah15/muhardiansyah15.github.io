@@ -65,11 +65,11 @@ h1, h2, h3 { font-weight: 600; line-height: 1.25; letter-spacing: -0.01em; }
 }
 .sidebar .logo {
   display: block;
-  padding: 20px 18px;
+  padding: 16px 16px;
   border-bottom: var(--grid);
-  font-weight: 600; font-size: 0.9rem;
   text-decoration: none;
 }
+.sidebar .logo img { width: 100%; display: block; }
 .sidebar .side-label {
   padding: 16px 18px 6px;
   font-size: 0.68rem;
@@ -406,6 +406,8 @@ h2 .doodle { width: 1.55rem; height: 1.55rem; }
   .sidebar nav { flex-direction: row; flex-wrap: wrap; padding: 4px 8px 10px; }
   .sidebar nav a { padding: 6px 10px; }
   .sidebar .side-label { display: none; }
+  .sidebar .logo { padding: 12px 16px; }
+  .sidebar .logo img { max-width: 210px; }
   .sidebar .side-bottom { display: none; }
 }
 
