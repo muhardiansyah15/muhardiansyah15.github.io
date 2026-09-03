@@ -389,6 +389,7 @@ h2 .doodle { width: 1.55rem; height: 1.55rem; }
    Footer
    -------------------------------------------------------------------------- */
 .footer {
+  border-top: var(--grid);
   padding: 30px clamp(20px, 4vw, 48px) 40px;
   font-size: 0.78rem;
   color: var(--ink-3);
