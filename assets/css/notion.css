@@ -123,7 +123,7 @@ h1, h2, h3 { font-weight: 600; line-height: 1.25; letter-spacing: -0.01em; }
   gap: 14px;
 }
 .band-inner {
-  max-width: 860px;
+  width: 100%;
   min-width: 0;
   padding: clamp(36px, 5vw, 60px) clamp(20px, 4vw, 48px);
 }
@@ -393,7 +393,9 @@ h2 .doodle { width: 1.55rem; height: 1.55rem; }
   font-size: 0.78rem;
   color: var(--ink-3);
 }
-.footer .soc { display: flex; flex-wrap: wrap; gap: 16px; margin: 10px 0 16px; }
+.footer .soc { display: flex; flex-wrap: wrap; gap: 16px; margin: 10px 0 16px; justify-content: center; }
+.footer .soc a, .sidebar .side-soc a { display: inline-flex; align-items: center; gap: 5px; }
+.footer .soc .doodle, .side-soc .doodle { width: 1.05rem; height: 1.05rem; }
 .footer .soc a { color: var(--ink-2); text-underline-offset: 3px; }
 .footer .eq { color: var(--ink-3); }
 
