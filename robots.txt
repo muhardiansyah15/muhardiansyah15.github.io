@@ -1,0 +1,11 @@
+# muhardiansyah15.github.io
+User-agent: *
+Allow: /
+
+# undangan keluarga — bukan untuk mesin pencari
+Disallow: /wedding_invitations/
+
+# staging SI Padang Jambu — versi produksi ada di padangjambu.netlify.app
+Disallow: /SI-PadangJambu/
+
+Sitemap: https://muhardiansyah15.github.io/sitemap.xml
